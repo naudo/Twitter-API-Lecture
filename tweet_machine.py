@@ -13,5 +13,5 @@ api = twitter.Api(
     access_token_secret=TWITTER_ACCESS_TOKEN_SECRET
 )
 
-status = api.PostUpdate('I love python-twitter!')
+status = api.PostUpdate('Hello Hackbright!')
 # print api.VerifyCredentials()
