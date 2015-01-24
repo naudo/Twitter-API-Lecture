@@ -14,19 +14,19 @@
 6. Click on "Keys and Access Tokens”, Click on “Regenerate Consumer Key and Secret”, Confirm the action
 7. Scroll to Access Tokens and click “Generate Access Token and Token Secret”
 
-You now will have all of the Tokens / Consumer Keys you need.  You can now create a secrets.sh file in your project folder and put the needed export statements in there. Remember, you’ll need to run source secrets.sh whenever you open a new terminal window.
+You now will have all of the Tokens / Consumer Keys you need.  You can now create a secrets.py file in your project folder and put the needed variables in there. I've included a snippet of the ones you'll want
 
-````bash
-export VAR_NAME='SOME VALUE'
+````python
+TWITTER_CONSUMER_KEY = ''
+TWITTER_CONSUMER_SECRET = ''
+TWITTER_ACCESS_TOKEN = ''
+TWITTER_ACCESS_TOKEN_SECRET = ''
 ````
 
 
 
 ## File Reference
-
-`api.py` covers How to load ENV vars
-
-`tweet_machine.py` expands on that and shows how to post tweets via python.
+`markov.py` is the python file that does the tweeting
 
 `.gitignore` is a handy dandy git feature that lets you check in a list of files that git should ignore and not ask you to commit.
 
